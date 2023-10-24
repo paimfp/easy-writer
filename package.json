@@ -1,7 +1,7 @@
 {
   "name": "easy-writer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Typewriter animation typescript library",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -10,7 +10,8 @@
   "scripts": {},
   "keywords": ["typewriter", "writer"],
   "repository": {
-    "url": ""
+    "type": "github",
+    "url": "https://github.com/paimfp/easy-writer.git"
   },
   "author": "Fernando Paim",
   "license": "MIT",

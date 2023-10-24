@@ -1,0 +1,1 @@
+export { EasyWriter } from './TypeWriter';

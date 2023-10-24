@@ -1,0 +1,20 @@
+{
+  "name": "easy-writer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {},
+  "keywords": ["typewriter", "writer"],
+  "repository": {
+    "url": ""
+  },
+  "author": "Fernando Paim",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}

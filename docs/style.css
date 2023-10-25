@@ -1,0 +1,28 @@
+body {
+    font-size: 60px;
+}
+.easy-writer {
+    white-space: pre-wrap;
+}
+.easy-writer::after {
+    content: "|";
+    margin: 0 -.1em;
+    font-weight: bold;
+    font-size: 1.2em;
+    animation: easy-writer-blink 500ms ease-in-out 0s infinite alternate;
+}
+.easy-writer.typing::after {
+    animation: none;
+}
+.easy-writer.hide-cursor::after {
+    content: '';
+    margin: 0;
+}
+@keyframes easy-writer-blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

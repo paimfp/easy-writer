@@ -5,19 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy Writer</title>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        .m-t-20 {
+            margin-top: 20px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .color-brown {
+            color: brown;
+        }
+    </style>
 </head>
 <body>
-    <div class="easy-writer"></div>
+    
+    <div class="working-progress easy-writer text-center color-brown"></div>
+
+    <div class="writer1 easy-writer m-t-20"></div>
+    <button onclick="startWriter1(event)" class="m-t-20">Start example</button>
 
     <script src="./easy-writer.js"></script>
     <script>
-        new EasyWriter()
-            .write('EasyWriter is a TypeScript library for typing animation with ', 1500)
-            .write('no setup', 1500)
-            .eraseLast()
+        let writer1 = new EasyWriter({ element: '.writer1' })
+            .write('EasyWriter is a TypeScript library for typing animation with ', 500)
+            .write('no setup', 1000)
+            .eraseLast(1500)
             .write('no wasted time', 1500)
-            .eraseLast()
-            .write('no pain...', 1500)
+            .eraseLast(1500)
+            .write('no pain...', 1500);
+
+        function startWriter1(e) {
+            writer1.start();
+            e.target.remove();
+        }
+
+        new EasyWriter({ element: '.working-progress', hideCursorOnEnd: true })
+            .write('This page is in working progress')
             .start();
     </script>
 </body>
